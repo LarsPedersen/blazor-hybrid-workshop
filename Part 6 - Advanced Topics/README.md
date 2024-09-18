@@ -196,7 +196,7 @@ Let's dive in.
 
    You're already a experienced Blazor engineer by now, can you see what we're doing here?
 
-   The `<button>` might look familiar as it is the button that we have been using through the entire application. But we don't want to repeat ourselves and duplicate having that `class` attribute everywhere. If we need to updat this value later, we need to go through the whole app. It's better to just update this in 1 place. And that is exactly why we are wrapping this in a Razor component.
+   The `<button>` might look familiar as it is the button that we have been using through the entire application. But we don't want to repeat ourselves and duplicate having that `class` attribute everywhere. If we need to update this value later, we need to go through the whole app. It's better to just update this in the 1 place. And that is exactly why we are wrapping this in a Razor component.
 
    To make it reusable for all of our buttons in the application, we need to make the text on the button and the method our button should call configurable.
 
@@ -253,7 +253,7 @@ Image that your component queries the devices' geolocation. We have seen how to 
 
 To overcome this, you probably want to inject a service into your component that knows how to do that. The implementation of that service will be different between running on a mobile device and running in the browser.
 
-The term "inject" probably already triggered you to think of dependency injection. That is exactly what you could use for this. Remember, dependency injection at its core just means you provide the receiver with the dependency it nees to do the job. It says nothing about how a dependency is resolved.
+The term "inject" probably already triggered you to think of dependency injection. That is exactly what you could use for this. Remember, dependency injection at its core just means you provide the receiver with the dependency it needs to do the job. It says nothing about how a dependency is resolved.
 
 In its simplest form you can create a property on your component with an interface that describes your location service. Then using Blazor Hybrid you inject a concrete implementation using .NET MAUI, and in the browser you inject a concrete implementation that uses browser APIs.
 
